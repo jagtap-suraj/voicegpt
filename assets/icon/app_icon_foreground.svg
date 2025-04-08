@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1024"
+   height="1024"
+   viewBox="0 0 1024 1024"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg">
+  
+  <!-- Microphone -->
+  <g transform="translate(312, 212)">
+    <!-- Microphone body -->
+    <rect
+       x="100"
+       y="0"
+       width="200"
+       height="400"
+       rx="100"
+       ry="100"
+       fill="#6750A4" />
+    
+    <!-- Stand -->
+    <rect
+       x="160"
+       y="400"
+       width="80"
+       height="120"
+       fill="#6750A4" />
+    
+    <!-- Base -->
+    <rect
+       x="100"
+       y="500"
+       width="200"
+       height="40"
+       rx="20"
+       ry="20"
+       fill="#6750A4" />
+  </g>
+</svg> 
