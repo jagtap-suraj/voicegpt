@@ -18,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   final ScrollController _scrollController = ScrollController();
   final ScrollController _logScrollController = ScrollController();
   final TextEditingController _textInputController = TextEditingController();
-  bool _showLogs = false;
+  final bool _showLogs = false;
   bool _showTextInput = false;
 
   // Animation controllers
@@ -250,7 +250,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                     sentiment: message.sentiment,
                                   ),
                                 )
-                                .toList(),
+                                ,
 
                             // Processing indicator
                             if (appProvider.isProcessing)
@@ -708,11 +708,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     code: TextStyle(
                       fontFamily: 'monospace',
                       backgroundColor:
-                          Theme.of(context).colorScheme.surfaceVariant,
+                          Theme.of(context).colorScheme.surfaceContainerHighest,
                       color: Theme.of(context).colorScheme.onSurfaceVariant,
                     ),
                     codeblockDecoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.surfaceVariant,
+                      color: Theme.of(context).colorScheme.surfaceContainerHighest,
                       borderRadius: BorderRadius.circular(8),
                     ),
                     textAlign: WrapAlignment.start,
@@ -834,10 +834,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   appProvider.clearConversation();
                   Navigator.of(context).pop();
                 },
-                child: const Text('Clear'),
                 style: TextButton.styleFrom(
                   foregroundColor: Theme.of(context).colorScheme.error,
                 ),
+                child: const Text('Clear'),
               ),
             ],
           ),
@@ -896,10 +896,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   }
                   Navigator.of(context).pop();
                 },
-                child: const Text('Update & Send'),
                 style: TextButton.styleFrom(
                   foregroundColor: Theme.of(context).colorScheme.primary,
                 ),
+                child: const Text('Update & Send'),
               ),
             ],
           ),
@@ -998,7 +998,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                         backgroundColor:
                                             Theme.of(
                                               context,
-                                            ).colorScheme.surfaceVariant,
+                                            ).colorScheme.surfaceContainerHighest,
                                         color:
                                             Theme.of(
                                               context,

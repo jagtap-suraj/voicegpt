@@ -11,7 +11,7 @@ void main() {
 }
 
 class AppIconGenerator extends StatefulWidget {
-  const AppIconGenerator({Key? key}) : super(key: key);
+  const AppIconGenerator({super.key});
 
   @override
   State<AppIconGenerator> createState() => _AppIconGeneratorState();

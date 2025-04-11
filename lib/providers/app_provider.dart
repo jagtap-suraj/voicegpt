@@ -45,7 +45,7 @@ class AppProvider extends ChangeNotifier {
   String _logs = ''; // To store logs
 
   // Chat history
-  List<ChatMessage> _messages = [];
+  final List<ChatMessage> _messages = [];
 
   // Class variables at the top
   bool _isAnalyzingSentiment = false;
@@ -459,7 +459,7 @@ class AppProvider extends ChangeNotifier {
 
           // Create enhanced prompt that requests markdown formatting
           final enhancedText = """
-${_translatedText}
+$_translatedText
 
 IMPORTANT: Your response will be read aloud using text-to-speech synthesis. Please optimize your answer for spoken audio:
 1. Use simple, conversational language that flows naturally when spoken
